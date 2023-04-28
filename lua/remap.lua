@@ -39,4 +39,4 @@ vim.keymap.set("i", "```", "``````<left><left><left>")
 
 vim.keymap.set("i", "{<cr>", "{<cr>}<esc>O")
 
-vim.keymap.set('n', '<leader>e', ':call Window()<CR>')
+--vim.keymap.set('n', '<leader>e', ':call Window()<CR>')

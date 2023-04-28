@@ -5,6 +5,6 @@
 require('set')
 require('remap')
 require('netrw')
+require('tabline')
 
-vim.cmd('source lua/ui.vim')
-
+vim.opt.showtabline = 2
