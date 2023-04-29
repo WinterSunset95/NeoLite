@@ -1,10 +1,8 @@
-
-
-
-
 require('set')
 require('remap')
 require('netrw')
-require('tabline')
+require('plug')
+require('treesitter')
+require('lsp')
 
 vim.opt.showtabline = 2

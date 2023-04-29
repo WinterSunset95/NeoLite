@@ -1,10 +1,6 @@
-
-
-
-
-
 vim.g.netrw_winsize = 20
 vim.g.netrw_browse_split = 3
+vim.g.netrw_chgwin = 1
 
 --vim.g.netrw_liststyle = 1
 --vim.g.netrw_altfile = 1
@@ -60,6 +56,11 @@ function toggle_netrw()
 	end
 end
 
+vim.cmd('source lua/ui.vim')
+
+--vim.cmd([[
+--	au TabNew * lua close_all_netrw()
+--]])
 
 vim.cmd([[
 	au TabNew * call NewTab()
@@ -73,3 +74,4 @@ vim.cmd([[
 
 -- Create mapping for <leader>e to toggle netrw
 vim.api.nvim_set_keymap('n', '<leader>e', ':lua toggle_netrw()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>o', ':wincmd w<CR>', { noremap = true, silent = true })

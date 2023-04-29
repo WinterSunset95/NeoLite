@@ -1,8 +1,3 @@
-
-
-
-
-
 function! Window() abort
 	let height = 60
 	let width  = 80
