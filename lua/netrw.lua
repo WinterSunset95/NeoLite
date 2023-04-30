@@ -56,7 +56,7 @@ function toggle_netrw()
 	end
 end
 
-vim.cmd('source lua/ui.vim')
+--vim.cmd('source lua/ui.vim')
 
 --vim.cmd([[
 --	au TabNew * lua close_all_netrw()
